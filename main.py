@@ -17,7 +17,7 @@ mydb = mysql.connector.connect(
     database=os.environ.get('mySQL_database')
 )
 
-orders = sqsp.all_orders(sqsp_api_key) 
+orders = sqsp.get_orders(sqsp_api_key) 
 
 keys = ""
 values = ""
